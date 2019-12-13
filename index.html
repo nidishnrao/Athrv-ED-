@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from mikhailmasterov.com/home-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2019 13:32:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/TitleIcon/favicon.ico">
+    <title>ATHRV-ED</title>
+
+
+<style>
+.container{
+    position: relative;
+  text-align: center;
+
+}
+
+
+.edu{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.education {
+height: 100px;
+width:200px;
+
+  }
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-image: url("img/Slider/education.jpeg.jpg");
+}
+
+<!--EDUC Slider-->
+.container {
+  max-width: 1000px;
+}
+
+#comparison {
+	width: 100%;
+	padding-bottom: 100%;
+	overflow: hidden; 
+  position: relative;
+}
+
+figure { 
+  position: absolute;
+	background-image: url(img/slider/slider1.jpeg.jpg);
+	background-size: cover;
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0; 
+}
+
+#divisor { 
+	background-image: url(img/slider/slider.jpeg.jpg);
+	background-size: cover;
+	position: absolute;
+	width: 50%; 
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+	bottom: 0; height: 100%;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 4px;
+    height: calc(50% - 25px);
+    background: white;
+    z-index: 3;
+  }
+  &::before {
+    top: 0;
+    box-shadow: 0 -3px 8px 1px rgba(0,0,0,.3);
+  }
+  &::after {
+    bottom: 0;
+    box-shadow: 0 3px 8px 1px rgba(0,0,0,.3);
+  }
+}
+#handle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+  
+  &::before,
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+  }
+  &::before {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+  }
+  &::after {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+  }
+}
+
+input[type=range]{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	position: absolute;
+	top: 50%; left: -25px;
+  transform: translateY(-50%);
+	background-color: transparent;
+	width: calc(100% + 50px); 
+  z-index: 2;
+  
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+}
+input[type=range]::-moz-range-track {
+	-moz-appearance:none;
+	height:15px;
+	width: 100%;
+	background-color: transparent; 
+	position: relative;
+	outline: none;    
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+    <!-- pre-loader start -->
+    <div class="preloader preloader-visible">
+        <div class="preloader-num"></div>
+    </div>
+    <!-- pre-loader end -->
+
+
+    <!-- placeholder start -->
+    <div class="background-placeholder"></div>
+    <!-- placeholder end -->
+
+
+    <!-- cursor start -->
+    <div class="cursor">
+        <div id="cursor" class="cursor-item"></div>
+    </div>
+    <!-- cursor end -->
+
+
+    <!-- main start -->
+    <main id="swup">
+
+        <!-- to-top-button start -->
+        <a href="#firstSection" class="to-top-button click-target">
+            <i class="icon-arrow-left"></i>
+        </a>
+        <!-- to-top-button end -->
+
+
+        <!-- header start -->
+        <header class="header header-white">
+            <!-- logo start -->
+            <div class="logo-box">
+                <a data-swup href="home.html" class="logo">
+                    <img src="img/Logo/athrvedlogo.png.png" alt="logo" height="100px" width="160px">
+                </a>
+            </div>
+            <!-- logo end -->
+            
+            <!-- menu-icon start -->
+            <div class="menu-outer-wrap">
+                <div class="menu-wrap">
+                    <div class="menu menu-hover click-target">
+                        <span class="menu-line-1"></span>
+                        <span class="menu-line-2"></span>
+                        <span class="menu-line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- menu-icon end -->
+        </header>
+        <!-- header end -->
+
+
+        <!-- menu-navigation end -->
+        <div class="menu-navigation">
+            <!-- menu-overlay start -->
+            <div class="menu-overlay click-target"></div>
+            <!-- menu-overlay end -->
+
+            <!-- menu-background start -->
+            <div class="menu-pre-background"></div>
+            <!-- menu-background end -->
+
+            <!-- menu-inner start -->
+            <div class="menu-inner">
+                <!-- menu-container start -->
+                <div class="menu-container">
+
+                    <!-- menu-header start -->
+                    <div class="menu-header">
+                        <h1>Navigate to</h1>
+                    </div>
+                    <!-- menu-header end -->
+
+
+                    <!-- navigation start -->
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a class="nav-link">
+                                    Home
+                                   
+                                </a>
+                              
+                            </li>
+                            <li class="navigation-item">
+                                <a class="nav-link" data-swup href="#about">About</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="nav-link" data-swup href="#services">Services</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="nav-link" data-swup href="#activity">Activites</a>
+                            </li>
+                          
+                            <li class="navigation-item">
+                                <a class="nav-link" data-swup href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation end -->
+
+
+                    <!-- social start -->
+                    <div class="social social-navigation">
+                     
+                        <div class="social-item">
+                            <a class="text-white" target="#" href="https://www.instagram.com/edathrv/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                                <a class="text-white" target="#" href="https://www.facebook.com/aeroclubnitte/">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                     
+                    
+                    <!-- social end -->
+
+                </div>
+                <!-- menu-container end -->
+            </div>
+            <!-- menu-inner end -->
+        </div>
+        <!-- menu-navigation end -->
+
+
+        <!-- slider start -->
+        <section id="firstSection" class="swiper-container slider-main slider-main-reveal bg-black">
+            <!-- swiper-wrapper start -->
+            <div  class="swiper-wrapper">
+                
+                <!-- swiper-slide start -->
+                <div class="swiper-slide slider-slide">
+                    <!-- slide content start -->
+                    <div class="slider-inner overlay-black bg-image lazy"
+                        data-bg="url(img/Slider/slider1.jpeg.jpg)"
+                        data-swiper-parallax="1000">
+
+                        <!-- container start -->
+                        <div class="container">
+                            <!-- row start -->
+                            <div class="row">
+
+                                <div class="col-xl-7 col-lg-8 offset-lg-1">
+                                    <div class="slide-content slide-content-light slide-content-intro">
+                                        <p class="slide-subtitle">
+                                            <span>Revolution</span>
+                                        </p>
+                                        <h1 class="slide-title">
+                                            <span>Initiating the Change</span>
+                                        </h1>
+                                        <p class="slide-text text-lead">
+                                            <span>
+                                             Breaking the rituals of Education system
+                                            </span>
+                                        </p>
+
+
+                                                 <div class="slider-nav-outer">
+                                            <div class="slider-nav slider-nav-intro">
+                                                <div class="btn-prev circle circle-left click-target">
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-left"></i>
+        
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="btn-next circle circle-right click-target">
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-right"></i>
+        
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- slider-nav start -->
+                                        <div class="slider-nav-outer">
+                                            <div class="slider-nav slider-nav-intro">
+                                                <div class="btn-prev circle circle-left click-target">
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-left"></i>
+        
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="btn-next circle circle-right click-target">
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-right"></i>
+        
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- slider-nav end -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- row end -->
+                        </div>
+                        <!-- container end -->
+                    </div>
+                    <!-- slide content end -->
+                </div>
+                <!-- swiper-slide end -->
+
+                
+                <!-- swiper-slide start -->
+                <div class="swiper-slide slider-slide">
+                    <!-- slide content start -->
+                    <div class="slider-inner overlay-black bg-image lazy"
+                        data-bg="url(img/Slider/slider2.jpeg.jpg)"
+                        data-swiper-parallax="1000">
+
+                        <!-- container start -->
+                        <div class="container">
+                            <!-- row start -->
+                            <div class="row">
+
+                              <div class="col-xl-7 col-lg-8 offset-lg-1">
+                                    <div class="slide-content slide-content-light slide-content-second">
+                                        <p class="slide-subtitle">
+                                            <span>Our</span>
+                                        </p>
+                                        <h1 class="slide-title">
+                                            <span>Mission</span>
+                                        </h1>
+                                        <p class="slide-text text-lead">
+                                            <span>
+                                               To provide an immersive learning ecosystem to students, enabling them with technical and interpersonal skills required in an organistaion by collaborative
+                                                approach and personalised mentorship.
+                                            </span>
+                                        </p>
+
+                                        <!-- slider-nav start -->
+                                        <div class="slider-nav-outer">
+                                            <div class="slider-nav slider-nav-visible">
+                                                <div class="btn-prev circle circle-left click-target">
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-left"></i>
+        
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="btn-next circle circle-right click-target">
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-right"></i>
+        
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- slider-nav end -->
+                                    </div>
+                                
+                            </div>  
+                            </div>
+                            <!-- row end -->
+                        </div>
+                        <!-- container end -->
+                    </div>
+                    <!-- slide content end -->
+                </div>
+                <!-- swiper-slide end -->
+
+
+                <!-- swiper-slide start -->
+                <div class="swiper-slide slider-slide">
+                    <!-- slide content start -->
+                    <div class="slider-inner overlay-black bg-image lazy"
+                        data-bg="url(img/Slider/slider3.jpeg.jpg)"
+                        data-swiper-parallax="1000">
+
+                        <!-- container start -->
+                        <div class="container">
+                            <!-- row start -->
+                            <div class="row">
+
+                                <div class="col-xl-7 col-lg-8 offset-lg-1">
+                                    <div class="slide-content slide-content-light slide-content-second">
+                                        <p class="slide-subtitle">
+                                            <span>Our</span>
+                                        </p>
+                                        <h1 class="slide-title">
+                                            <span>Vision</span>
+                                        </h1>
+                                        <p class="slide-text text-lead">
+                                            <span>
+                                             To build a next-gen work force which is immune to the age of automation and to enhance the economy of nation with the help of technology through research and development.
+                                            </span>
+                                        </p>
+
+                                        <!-- slider-nav start -->
+                                        <div class="slider-nav-outer">
+                                            <div class="slider-nav slider-nav-visible">
+                                                <div class="btn-prev circle circle-left click-target">
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-left"></i>
+        
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="btn-next circle circle-right click-target">
+                                                    <div class="half-right">
+                                                        <div class="item"></div>
+                                                    </div>
+        
+                                                    <i class="icon-arrow-right"></i>
+        
+                                                    <div class="half-left">
+                                                        <div class="item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- slider-nav end -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- row end -->
+                        </div>
+                        <!-- container end -->
+
+                        
+            <!-- bottom-left-links start -->
+            <div class="bottom-left-links">
+                    <div class="">
+                        <a class="link text-white" href="https://www.instagram.com/edathrv/">Instagram</a>
+                    </div>
+                    <div class="">
+                        <a class="link text-white" href="#">FaceBook</a>
+                    </div>
+                   
+                </div>
+                <!-- bottom-left-links end -->
+    
+                    </div>
+                    <!-- slide content end -->
+                </div>
+                <!-- swiper-slide end -->
+
+
+          
+   
+        </section>
+        <!-- slider end -->
+         <!-- row start -->
+
+
+
+
+      <section id="about">
+         <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div data-animation-container class="section-title section-title-medium text-center">
+                    <p data-animation-child class="text-additional subtitle slide-right" data-animation="slide-right">The Change is here</p><br><br><br><br>
+                    <h2 data-animation-child class="bg-reveal-dark cover-right delay-1" data-animation="cover-right">
+                   
+                        <span>Who are we?</span>
+                    </h2><br><br><br><br>
+                    <p data-animation-child class="section-text text-black bg-reveal-dark cover-right delay-1" data-animation="cover-right">
+                        <span>
+                           Athrv Edtech is an in-campus micro student start-up organisation which intends to provide a platform to college students, to work in a corporate eco-system.This organisation will enable students to get trained in trending technologies like Artifical Intelligence, Data Science, Drone Technology, Internet Of Things, Robotics, 3D Printing, Augmented Reality, etc.
+                           
+                        </span>
+                        <br><br><br><br><br><br><br>
+                    </p>
+                </div>  
+            </div>
+        </div>
+
+        <!-- row end -->
+
+
+        
+
+        
+
+
+        <!-- section start -->
+        <section class="intro section-large section-80vh bg-black">
+            <!-- container start -->
+            <div data-animation-container class="container" >
+                    
+         
+                <!-- row start -->
+                <div class="row" >
+                        <div class="education">
+
+                            <div class="edu" >
+                                    
+                    <div class="col-lg-10">
+                        <div data-animation-child class="section-title section-title-large slide-up" data-animation="slide-up">
+                            <h2 class="text-white">Why Us?</h2>
+                        </div>
+                       
+              
+                        <p data-animation-child class="text-lead text-white slide-up delay-1" data-animation="slide-up">
+                                As a process of a continuous learning Students will apply and enhance their team. The organisation will work with an absolute corporate hierachy which would give the flavours of working in a professional environment, improving individual inter-personal skills.
+                        </p>
+</div>
+                     </div>
+                    
+                </div>
+
+                </div>
+                <!-- row end -->
+                
+            </div>
+            <!-- container end -->
+        </section>
+    </section>
+        <!-- section end -->
+            <br><br>
+
+        <!-- section start -->
+
+    <section id="services">
+        <section class="section-large bg-black">
+            <!-- container start -->
+            <div class="container">
+
+                <!-- row start -->
+                <div class="row">
+                    <div class="col-xl-8 col-lg-9">
+                       <div data-animation-container class="section-title section-title-medium">
+                            <p data-animation-child class="text-additional subtitle slide-right" data-animation="slide-right">Skills that we Inculcate </p>
+                            <h2 data-animation-child class="text-white bg-reveal-light cover-right delay-1" data-animation="cover-right">
+                                <span>Our Learning Domains</span>
+                            </h2>
+                            <p data-animation-child class="section-text text-white bg-reveal-light cover-right delay-1" data-animation="cover-right">
+                                <span>
+                                    Connecting Conventional Education With Futuristic Technologies.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+
+            </div>
+            <!-- container end -->
+
+            <!-- portfolio start -->
+            <div class="portfolio">
+                <!-- container start -->
+                <div class="container">
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div data-animation-container class="col-md-6">
+                            <a class="portfolio-item" data-swup href="">
+                                <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                    <div class="bg-image lazy" data-bg="url(img/Slider/ai.jpg)"></div>
+                                </div>
+                                <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                        <span class="text-additional">Artifical Intelligence</span> 
+                              
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-animation-container class="col-md-6">
+                            <a class="portfolio-item" data-swup href="">
+                                <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                    <div class="bg-image lazy" data-bg="url(img/Slider/data.jpg)"></div>
+                                </div>
+                                <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                    <span class="text-additional">Data Science</span>
+                              
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- row end -->
+              
+                    <!-- row start -->
+                    <div class="row">
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/drone1.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                            <span class="text-additional">Drones and UAV</span> 
+                                  
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/iot.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                        <span class="text-additional">Internet Of Things</span>
+                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- row end -->
+                        
+                    <!-- row start -->
+                    <div class="row">
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/software.jpeg.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                            <span class="text-additional">Software Development</span> 
+                                  
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/web.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                        <span class="text-additional">Web Design</span>
+                                 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- row end -->
+                        
+                    <!-- row start -->
+                    <div class="row">
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/app.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                            <span class="text-additional">App Development</span> 
+                                  
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div data-animation-container class="col-md-6">
+                                <a class="portfolio-item" data-swup href="">
+                                    <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                        <div class="bg-image lazy" data-bg="url(img/Slider/ar.jpg)"></div>
+                                    </div>
+                                    <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                        <span class="text-additional">Augumented Reality</span>
+                            
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- row end -->
+
+                    <!-- row start -->
+                    <div class="row">
+                        <div data-animation-container class="col-md-6">
+                            <a class="portfolio-item" data-swup href="">
+                                <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                    <div class="bg-image lazy" data-bg="url(img/Slider/3d.jpg)"></div>
+                                </div>
+                                <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                    <span class="text-additional">3-D Printing</span>
+             
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-animation-container class="col-md-6">
+                            <a class="portfolio-item" data-swup href="">
+                                <div data-animation-child class="portfolio-img bg-reveal-light cover-right" data-animation="cover-right">
+                                    <div class="bg-image lazy" data-bg="url(img/Slider/robotics.jpg)"></div>
+                                </div>
+                                <div data-animation-child class="portfolio-info slide-right delay-7" data-animation="slide-right">
+                                    <span class="text-additional">Robotics</span>
+                                
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- row end -->
+                    
+                </div>
+                <!-- container end -->
+            </div>
+            <!-- portfolio end -->
+        </section>
+        <!-- section end -->
+
+    </section>
+        <!-- section start -->
+        <section id="activity">
+        <section class="section-large bg-black">
+            <!-- container start -->
+            <div class="container">
+
+                <!-- row start -->
+                <div class="row">
+                    <div class="col-xl-7 col-lg-9">
+                        <div data-animation-container class="section-title section-title-medium md-center">
+                            <p data-animation-child class="text-additional subtitle slide-right" data-animation="slide-right">Activities</p>
+                            <h2 data-animation-child class="text-white bg-reveal-light cover-right delay-1" data-animation="cover-right">
+                                <span> Student Activities</span>
+                            </h2>
+                            <p data-animation-child class="section-text text-white bg-reveal-light cover-right delay-1" data-animation="cover-right">
+                                <span>
+                               Our Student Program includes the following.
+                                </span>
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+                <!-- row end -->
+
+        
+                <!-- card-group start -->
+                <div class="card-group">
+                    <!-- row start -->
+                    <div  class="row justify-content-center">
+
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                    <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                        <div class="card-content">
+                                            <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+        
+                                            <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                <h3 class="card-title text-white">Mentorship</h3>
+                                            </div>
+        
+                                         
+        
+                                            <a href="#" class="card-btn text-white">
+                                                <i class="icon-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                        <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                            <div class="card-content">
+                                                <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                    <i class="fas fa-edit"></i>
+                                                </div>
+            
+                                                <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                    <h3 class="card-title text-white">Trainings</h3>
+                                                </div>
+            
+            
+                                                <a href="#" class="card-btn text-white">
+                                                    <i class="icon-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                            <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                                <div class="card-content">
+                                                        
+                                                    <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                        <i class="fas fa-layer-group"></i>
+                                                    </div>
+                
+                                                    <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                        <h3 class="card-title text-white">Projects</h3>
+                                                    </div>
+                
+                
+                                                    <a href="#" class="card-btn text-white">
+                                                        <i class="icon-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                    <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                        <div class="card-content">
+                                            <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+        
+                                            <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                <h3 class="card-title text-white">Open-Workshops</h3>
+                                            </div>
+        
+                                         
+        
+                                            <a href="#" class="card-btn text-white">
+                                                <i class="icon-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                        <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                            <div class="card-content">
+                                                <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                    <i class="fas fa-trophy"></i>
+                                                </div>
+            
+                                                <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                    <h3 class="card-title text-white">Competitions</h3>
+                                                </div>
+            
+                                           
+                                                <a href="#" class="card-btn text-white">
+                                                    <i class="icon-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                    <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                    <div class="card-content">
+                                        <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                            <i class="fas fa-user-graduate"></i>
+                                        </div>
+    
+                                        <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                            <h3 class="card-title text-white">Internship</h3>
+                                        </div>
+    
+                       
+    
+                                        <a href="#" class="card-btn text-white">
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+                  
+            
+
+      
+           
+                    <div class="card-group">
+                        <!-- row start -->
+                        <div  class="row justify-content-center">
+                    
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                    <div class="card-content">
+                                        <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                            <i class="fas fa-industry"></i>
+                                        </div>
+    
+                                        <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                            <h3 class="card-title text-white">Industry Challenges</h3>
+                                        </div>
+    
+                       
+    
+                                        <a href="#" class="card-btn text-white">
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                    <div class="card-content">
+                                        <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+    
+                                        <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                            <h3 class="card-title text-white">Societal Solutions</h3>
+                                        </div>
+    
+                                       
+    
+                                        <a href="#" class="card-btn text-white">
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                    <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                        <div class="card-content">
+                                                
+                                            <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                <i class="fas fa-lightbulb"></i>
+                                            </div>
+        
+                                            <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                <h3 class="card-title text-white">Research and Development</h3>
+                                            </div>
+        
+        
+                                            <a href="#" class="card-btn text-white">
+                                                <i class="icon-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                        <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                            <div class="card-content">
+                                                <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                    <i class="fas fa-pencil-ruler"></i>
+                                                </div>
+            
+                                                <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                    <h3 class="card-title text-white">Product Development</h3>
+                                                </div>
+            
+                                           
+                                                <a href="#" class="card-btn text-white">
+                                                    <i class="icon-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                    <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                        <div class="card-content">
+                                            <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                                <i class="fas fa-poll"></i>
+                                            </div>
+        
+                                            <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                                <h3 class="card-title text-white">Marketing</h3>
+                                            </div>
+        
+                                           
+        
+                                            <a href="#" class="card-btn text-white">
+                                                <i class="icon-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-8 mt-30">
+                                <div data-animation-container class="card bg-gray-dark card-large card-hover-btn cursor-color">
+                                    <div class="card-content">
+                                        <div data-animation-child class="card-icon text-white slide-up" data-animation="slide-up">
+                                            <i class="far fa-handshake"></i>
+                                        </div>
+    
+                                        <div data-animation-child class="slide-up delay-2" data-animation="slide-up">
+                                            <h3 class="card-title text-white">Corporate Co-Creation</h3>
+                                        </div>
+    
+    
+                                        <a href="#" class="card-btn text-white">
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                          
+                            </div>
+    
+                    
+                        </div>
+                        <!-- row end -->
+                    </div>
+                    <!-- card-group end -->
+                </section>
+                <!-- container end -->
+            </section>
+                    
+                 
+
+
+
+
+
+          <!-- footer start -->
+          <section id="contact">
+          <footer data-animation-container class="footer bg-black">
+                <!-- container start -->
+                <div class="container">
+                    <!-- row start -->
+                    <div class="row justify-content-md-between justify-content-sm-center">
+    
+                        <div class="col-lg-4 col-md-6 col-sm-10">
+                            <div class="footer-item text-md-left text-center">
+                                    <h3 data-animation-child class="footer-title text-white slide-up" data-animation="slide-up">For More Details</h3>
+                                <div data-animation-child class="footer-content slide-up delay-1" data-animation="slide-up">
+                                    <p class="footer-text text-light-gray">
+                                       +91 78992 67102</br>
+                                  
+                                    </p>
+                                </div>
+                                <div data-animation-child class="footer-content slide-up delay-1" data-animation="slide-up">
+                                        <p class="footer-text text-light-gray">
+                                           +91 87625 99895</br>
+                                      
+                                        </p>
+                                    </div>
+                                  
+                            </div>
+                            <div class="footer-item text-md-left text-center">
+                            <p class="footer-text text-light-gray">
+                                    
+                                ATHRV-ED<BR>Micro Start-up @NMAMIT NITTE
+                            </p>
+                        </div>
+                        </div>
+    
+                        <div class="col-md-6 col-sm-10">
+                            <div class="footer-item text-md-right text-center">
+                                <h3 data-animation-child class="footer-title text-white slide-up" data-animation="slide-up">Get in touch!</h3>
+                                <ul class="footer-content">
+                                    <li data-animation-child class="text-light-gray slide-up delay-1" data-animation="slide-up">
+                                            goutam@infinitydrones.in 
+                                    </li>
+                                   <BR>
+                                    <li data-animation-child class="text-light-gray slide-up delay-3" data-animation="slide-up">
+                                        Karkala, Udupi DST,<BR>
+                                        574110,<BR>
+                                        Karnataka.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- row end -->
+    
+    
+                    <!-- row start -->
+                    <div data-animation-child class="row justify-content-between footer-bottom slide-up delay-4" data-animation="slide-up">
+                        <div class="col-md-6">
+                            <div data-animation-child class="copyright slide-up delay-5" data-animation="slide-up">
+                                <p class="text-light-gray">2019 @ATHRVED. All rights reserved</p>
+                            </div>
+                        </div>
+                      
+                      
+                           
+    
+                        <div class="col-md-6">
+                                <div class="footer-item text-md-right text-center">
+                                        <h3 data-animation-child class="footer-title text-white slide-up" data-animation="slide-up">FOLLOW US</h3>
+                                        </div>
+                            <div data-animation-child class="footer-social social slide-up delay-5" data-animation="slide-up">
+                                <div class="social-item">
+                                    <a class="text-white" target="#" href="https://www.youtube.com/channel/UCOXsKNWO7ACSuCF-iiSw-9w">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="social-item">
+                                    <a class="text-white"  target="#" href="https://www.facebook.com/aeroclubnitte/">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="social-item">
+                                    <a class="text-white"  target="#" href="https://www.instagram.com/edathrv/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+    
+                </div>
+                <!-- container end -->
+            </footer>
+            <!-- footer end -->
+        </section>
+        </main>
+        <!-- main end -->
+    
+        <!-- JavaScript -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/36d83b54d7.js" crossorigin="anonymous"></script>
+        <script>
+        var divisor = document.getElementById("divisor"),
+            handle = document.getElementById("handle"),
+            slider = document.getElementById("slider");
+        
+        function moveDivisor() {
+          handle.style.left = slider.value+"%";
+            divisor.style.width = slider.value+"%";
+        }
+        
+        window.onload = function() {
+            moveDivisor();
+        };</script>
+    
+    </body>
+    
+    <!-- Mirrored from mikhailmasterov.com/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2019 13:32:23 GMT -->
+    </html>
